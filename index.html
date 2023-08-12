@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.product {
+    border: 1px solid hsl(62, 92%, 40%);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.add-to-cart {
+    background-color: #aa00ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+.cart-summary {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remove-item {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.remove-item:hover {
+    background-color: #cc0000;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-commerce Portfolio</h1>
+    </header>
+    <section class="product">
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=404&hei=340&fmt=jpeg&qlt=90&.v=1664472289661" alt="Product 1 Image">
+        <h2>MacBook Air 13 inches</h2>
+        <p>16-core Neural Engine
+            38.91 cm (13-inch) Liquid Retina display with True Tone³
+            1080p FaceTime HD camera
+            MagSafe 3 charging port
+            Two Thunderbolt / USB 4 ports
+            Magic Keyboard with Touch ID
+            Force Touch trackpad
+            35W Dual USB-C Port Power Adapter</p>
+        <p>Price: $1099.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </section>
+    <section class="product">
+        <img src="https://mirzacdns3.s3.ap-south-1.amazonaws.com/cache/catalog/RSO2772/8-800x800.jpg" alt="Product 2 Image">
+        <h2>red tape shoes for men</h2>
+        <p>RedTape Black Sports Shoes For Men | Shock Absorbant, Slip Resistant, Dynamic Feet Support & Soft Cushion Insole</p>
+        <p>Price: $24.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </section>
+    <section class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuHg9IIQf99Ci2crGRh7RFp7sQuwYmVzsskB6BRW-A-Atz4K9HtY2oI2Z2yDU_Tn15lhw&usqp=CAU" alt="Product 3 Image">
+        <h2>maxi dress blue for women</h2>
+        <p>Frills-Please Checkered Blue Maxi Dress</p>
+        <p>Price: $29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </section>
+    <section class="products">
+    </section>
+    <div id="cart-summary" class="cart-summary">
+        <h2>Cart Summary</h2>
+    </div>    
+    <footer>
+        <button id="cart-button">Number of Products: <span id="cart-count">0</span></button>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
